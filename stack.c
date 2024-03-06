@@ -89,7 +89,6 @@ void search(int element)
 
 int main()
 {
-    // push items on to the stack
     push(3);
     push(5);
     push(9);
@@ -98,24 +97,17 @@ int main()
     push(15);
     push(12);
     push(15);
-    // stack full at this point so displays stack full error
     push(15);
 
     printf("Element at top of the stack: %d\n", peek());
     printf("Elements: \n");
 
-    // print stack data
     display();
-
-    // remove element from stack
     printf("\nElement popped: %d\n", pop());
     printf("Element at top of the stack: %d\n", peek());
     printf("Elements: \n");
 
-    // print stack data
     display();
-
-    // search element in stack
     search(9);
 
     return 0;
